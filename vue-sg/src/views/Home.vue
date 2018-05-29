@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img src="../assets/logo.png">
-    <LandingPage msg="Welcome to VueJS Singapore Community"/>
+    <landing-page msg="Welcome to VueJS Singapore Community"/>
   </div>
 </template>
 
