@@ -1,8 +1,9 @@
 ######vuejs_sg_page
 
-![alt text](https://vuejs.org/images/logo.png)
-
-
+<p align="center">
+ <img src="https://vuejs.org/images/logo.png" width="150"/>
+</p>
+ 
 ###The New Vue.js Singapore Home Page
 
 ### What the Vue.js Page will include 
