@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue.js Singapore Meetup Refreshment Registration</title>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  </head>
+  <body>
+
+    <!-- Add all HTML Code here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+
+  <div class="" style="height:100px"></div>
+
+<style>
+
+section {
+	display: block;
+	}
+
+.right-box {
+	background-color: #f0f0f0;
+	padding: 2px 15px;
+	}
+	
+h2, h3, h4, h5 {
+	color: #4fc08d;
+	}
+	
+.color-green {
+	background-color: #4fc08d;
+	color:#fff;
+	}
+
+.badge {
+	display:inline-block;
+	padding: 5px 8px;
+	border-radius:4px;
+	}
+
+.size-16 {
+	font-size:16px;
+	}
+.logo-brand {
+	max-width: 300px;
+	}
+	
+.company-logo {
+	width:100px;
+	}
+</style>
+
+  <div id="app" class="container">
+  
+  <div class='row'>
+  
+    <h1> Vue.js </h1>
+  
+  </div>
+
+  
+  <div class="row">
+  
+  
+  
+  
+  
+  <div class="eight columns">		
+		<h1> Vue.js Singapore Meet Up Group</h1>
+		
+		<p>Please register and tell us the code to collect your refreshment</p>
+		
+
+
+		
+  </div>
+  
+  <div class="four columns">
+	<p> Welcome to the Vue.js Singapore page </p>
+	
+	<p> The project focuses on making some of the best ideas in web UI development
+	(components, declarative UI, hot-reloading, time-travel debugging...) more approachable, 
+	so that any developer can quickly pick it up and enjoy the productivity boost when working with modern,
+	interactive web interfaces. </p>
+  </div>
+  
+  
+  </div>
+			<hr>
+  
+  
+  
+  
+  <section>
+		<h4> Sponsers </h4>
+  
+ 		<image src="https://chefco.biz/images/logo.png" class="logo-brand">
+		<image src="https://mariadb.org/wp-content/uploads/2015/10/mariadb-usa-inc.png" class="logo-brand">
+		 
+  
+  </section>
+			<hr>
+  <section>
+  
+	<div class='row'>
+		<div class='eight columns'>
+  
+		<h4> Jobs </h4>
+		<button @click='getJobs'>Get The Jobs</button>
+		
+		
+		<ul>
+			<li v-for='job in jobs'>{{job.title}} at <br>
+			<img class='company-logo' :src="job.company.avatar">{{job.company.name}}
+			<br> {{job.description}}
+			{{job.location}}
+			{{job.for_humans}}
+			
+			</li>
+		</ul>
+		</div>
+		
+		<div class='four columns'>
+		
+		Powered by Vuejobs
+		
+		</div>
+	</div>	
+  
+  </section>
+  
+	<hr>
+	
+	<section>
+	Community Supporters 
+	
+	
+	
+	
+	
+	</section>
+ 
+
+ 	<section>
+	Companies Using Vue.js 
+	
+	
+	
+	
+	
+	</section>
+  
+  
+  
+  
+  </div>
+
+
+  <script>
+	var vuejobs = "https://vuejobs.com/api/";
+	var app = new Vue({
+	  el: '#app',
+	  data: {
+		jobs: [],
+	  
+
+	  },
+	  
+	  mounted() {
+			//this.getJobs()
+	  },
+	  
+	  methods: {
+		
+		
+		getJobs() {
+			self = this; 
+
+			axios.get(vuejobs + 'jobs').then( function(response) {
+				self.jobs = response.data; 
+				console.log(response.data);
+			}).catch (function(err) {
+			 console.log(err)
+			}) 
+		
+		}
+		
+	  }
+
+
+	  
+	  
+	  
+})
+	  
+  
+  </script>
+  
+  
+  </body>
+</html>
