@@ -18,3 +18,24 @@ Backend?
 
 
 
+## Development Stack 
+
+1. Vue.js in CDN ES2015
+Because we are Vue.js
+
+2. Skeleton CSS 
+Don't want any jquery mixed in with the css
+
+3. SPA with Webpack 
+We are looking for a SPA page to show Vue.js 
+
+4. Vue-router
+Potentially for mutiple page effects 
+
+5. Axios for API pulls  
+
+6. PHP Fat Free Backend 
+Temporary server side backend for simple pull and key storage 
+
+
+
