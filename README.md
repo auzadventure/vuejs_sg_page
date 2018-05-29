@@ -1,10 +1,10 @@
-######vuejs_sg_page
+###### vuejs_sg_page
 
 <p align="center">
  <img src="https://vuejs.org/images/logo.png" width="150"/>
 </p>
  
-###The New Vue.js Singapore Home Page
+### The New Vue.js Singapore Home Page
 
 ### What the Vue.js Page will include 
 
