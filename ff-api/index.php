@@ -16,21 +16,23 @@ $f3->route('GET /',
 );
 
 
+$f3->route('GET /init', function ($f3) {
+	
+	$model= $f3->get('ContrTbl');
+	$model->name = "Lionel";
+	$model->save();
+
+});
+
+
 
 $f3->route('GET /contributors/all',
     function($f3) {
-		$dataFolder = $f3->get('dataFolder');
-		$dataFile = $dataFolder.'/contributors.json';
-		
-		$a = [ 0 => ['name'=>'lionel','role'=>'scrummaster'],
-			   1 => ['name'=>'alan', 'role'=> 'stack build']
-			   ];
-		//$s = json_encode($a);
-		//file_put_contents($dataFile,$s);
-		
-		$data = file_get_contents($dataFile);
-		echo $data;
-    }
+	   $model= $f3->get('ContrTbl');
+	   $data = $model->cast();
+	   print_r($data);
+	
+	}
 );
 
 
