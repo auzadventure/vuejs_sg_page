@@ -1,10 +1,10 @@
-### The New Vue.js Singapore Home Page
+# The New Vue.js Singapore Home Page
 
 <p align="center">
  <img src="https://vuejs.org/images/logo.png" width="150"/>
 </p>
  
-### What the Vue.js Page will include 
+## What the Vue.js Page will include 
 
 1. Brand Logo 
 2. Latest meetups from Meetup API. 
@@ -14,12 +14,12 @@
 6. Contributors to Vue.js
 7. Organizing Team and committee 
 
-### The Team
+## The Team
 
 1. [auzadventure](https://github.com/auzadventure) 
 2. [Allan Chua](https://github.com/allanchua101)
 
-### Development Stack 
+## Development Stack 
 
 1. Vue.js in CDN ES2015 - Because we are Vue.js
 2. Skeleton CSS - Don't want any jquery mixed in with the css
