@@ -23,41 +23,15 @@ Backend?
 
 ### The Team
 
-- auzadventure 
-- Allan_Chua
-
-
-
+1. [auzadventure](https://github.com/auzadventure) 
+2. [Allan Chua](https://github.com/allanchua101)
 
 ### Development Stack 
 
-
--1. Vue.js in CDN ES2015
-Because we are Vue.js
-
-
-
--2. Skeleton CSS 
-
-Don't want any jquery mixed in with the css
-
--3. SPA with Webpack 
-
-We are looking for a SPA page to show Vue.js 
-
-
-
--4. Vue-router
-
-Potentially for mutiple page effects 
-
-
-
--5. Axios for API pulls  
-
--6. PHP Fat Free Backend 
-
-Temporary server side backend for simple pull and key storage 
-
-
-
+1. Vue.js in CDN ES2015 - Because we are Vue.js
+2. Skeleton CSS - Don't want any jquery mixed in with the css
+3. Single Page Application - We want to showcase VueRouter and sexy vue native transitions.
+4. Webpack - We want to showcase Vue's cohesion with the world's top resource bundler.
+5. Vue-router - Its all about sexy UI transitions.
+6. Axios - The most commonly used AJAX library for pulling data out of APIs.
+7. PHP Fat Free Backend - Temporary server side backend for simple pull and key storage.
