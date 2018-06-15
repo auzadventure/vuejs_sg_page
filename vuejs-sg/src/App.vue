@@ -1,21 +1,44 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hr />
-    <router-link to="/">Home</router-link>
-    <router-link to="/jobs">Jobs</router-link>
-    <router-link to="/companies">Companies</router-link>
-    <router-link to="/meetups">Meetups</router-link>
-    <router-link to="/sponsors">Sponsors</router-link>
-    <router-link to="/contributors">Contributors</router-link>
-    <hr />
-    <router-view/>
+  
+	<div id="main-container">
+	
+	<div class="container">
+	
+		<div class="four columns">
+			<img src="./assets/logo.png">
+		</div>
+		<div class="eight columns" style='padding:20px 0; text-align:left;'>
+			<h2>VUE.JS Singapore Community</h2>
+			<h5>For All Your Vue.js</h5>
+		</div>
+	</div>
+	<hr>
+	
+	<app-meetups></app-meetups>
+	
+	<hr>
+	
+	<app-jobs></app-jobs>
+	
+	
+	
+	</div>
   </div>
 </template>
 
 <script>
+import Jobs from '@/components/Jobs'
+import Meetups from '@/components/Meetups'
+
 export default {
-  name: "App"
+  name: "App",
+  
+  components: {
+	'app-jobs': Jobs,
+	'app-meetups':Meetups,
+  
+  }
 };
 </script>
 

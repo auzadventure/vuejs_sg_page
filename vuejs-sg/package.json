@@ -2,7 +2,7 @@
   "name": "vuejs-sg",
   "version": "1.0.0",
   "description": "The official website of VueJS community in Singapore.",
-  "author": "Allan Chua",
+  "author": "Allan Chua, Lionel Yeo",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
