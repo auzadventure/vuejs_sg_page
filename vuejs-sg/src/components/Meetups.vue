@@ -19,7 +19,6 @@ let meetupsModule = {
     pastMeetupsAPI
       .execute()
       .then(data => {
-        console.log(data);
         data.for(i => meetupsModule.data.pastMeetups.push(i));
       })
       .catch(err => {
