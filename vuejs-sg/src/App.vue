@@ -30,7 +30,17 @@
 		
 	<app-sponsors></app-sponsors>
 	
+	
+	<div id="footer" class="">
+	
+	
+	</div>	
+	
 	</div>
+	
+	
+	
+	
   </div>
 </template>
 

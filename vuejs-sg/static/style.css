@@ -34,6 +34,13 @@ h5 {
 	color: #7f8c8d;
 }
 
+
+#footer {
+	background-color:#efefef;
+	height:120px;
+	margin-top: 50px;
+}
+
 p {
 	text-align:left;
 }

@@ -6,11 +6,11 @@
 
 <div class="row">
 
-<div class="three columns panel">
+<div class="four columns panel">
 
 <img class='placeholder'>
 <h5 class='b-green'>Company</h5>
-ddd
+<p class='font-small'>Some Description Coming soon</p>
 </div>
 
 </div>
