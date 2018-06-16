@@ -1,13 +1,20 @@
 <template>
 
-<div class="">
-   <h1>{{ msg }}</h1>
+<div class="container">
 
-   <h4>A whole bunch of code</h4>
+<h5>{{msg}}</h5>
+
+<div class="row">
+
+<div class="three columns panel">
+
+<img class='placeholder'>
+<h5 class='b-green'>Company</h5>
+ddd
+</div>
+
+</div>
    
-   <p>Time {{time.time}}</p>
-   
-   <button @click='getData'>Click Me</button>
 </div>   
 </template>
 
@@ -21,7 +28,7 @@ export default {
   data() {
     return {
       msg: "VueJS Community Sponsors",
-	  time: {}
+	  rows: {},
     };
   },
   
@@ -29,18 +36,18 @@ export default {
   
 	getData() {
 	
-	let url = 'http://date.jsontest.com/';
-	
-	let self = this;
-	
-	axios.get(url)
-		  .then(function (response) {
-			self.time = response.data; 
-			console.log(response);
-		  })
-		  .catch(function (error) {
-			console.log(error);
-		  });
+		let url = 'http://localhost/wesvault.com/bpo/vuejs-sg/ff-api/coy/all';
+		
+		let self = this;
+		
+		axios.get(url)
+			  .then(function (response) {
+				self.rows = response.data; 
+				console.log(response);
+			  })
+			  .catch(function (error) {
+				console.log(error);
+			  });
 
 	
 		alert('get date');
@@ -51,4 +58,12 @@ export default {
 </script>
 
 <style scoped>
+.panel {
+	height: 150px;
+	padding:5px;
+
+	}
+.panel h5 {
+	text-align: center;
+	}
 </style>

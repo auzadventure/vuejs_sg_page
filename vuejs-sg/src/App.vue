@@ -21,7 +21,14 @@
 	
 	<app-jobs></app-jobs>
 	
+	<hr>
 	
+	<app-contributors></app-contributors>
+	
+	<hr>
+	
+		
+	<app-sponsors></app-sponsors>
 	
 	</div>
   </div>
@@ -30,6 +37,8 @@
 <script>
 import Jobs from '@/components/Jobs'
 import Meetups from '@/components/Meetups'
+import Contributors from '@/components/Contributors'
+import Sponsors from '@/components/Sponsors'
 
 export default {
   name: "App",
@@ -37,6 +46,8 @@ export default {
   components: {
 	'app-jobs': Jobs,
 	'app-meetups':Meetups,
+	'app-contributors': Contributors,
+	'app-sponsors': Sponsors,
   
   }
 };

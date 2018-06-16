@@ -59,4 +59,6 @@ $f3->route('GET /coy/all',
 	}
 );
 
+$f3->copy('HEADERS.Origin','CORS.origin');
+
 $f3->run();

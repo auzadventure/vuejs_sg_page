@@ -18,6 +18,17 @@ h5 {
 	font-weight: 300;	
 }	
 
+/* img */
+.placeholder {
+    background-color: #eee;
+    display: flex;
+    height: 80px;
+	width: 80px;
+	
+    margin: 10px auto;
+	border-radius: 50%;
+}
+
 .font-small {
 	font-size: 0.8em;
 	color: #7f8c8d;

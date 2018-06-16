@@ -3,7 +3,8 @@
 <div class='container'>
 
    <h5>{{ msg }} Powered By Vuejobs.com</h5>
-
+	<button @click='getData'>Get Jobs</button>
+	<button @click='clearData'>Clear Data</button>
  <table class="u-full-width">
   <thead>
     <tr>
@@ -14,7 +15,10 @@
     </tr>
   </thead>  
    <tbody>
-    <tr v-for="job in jobs">
+
+    
+	
+	<tr v-for="job in jobs" :key="job">
       <td>
 	  <img class='logo' :src="job.company.avatar"></img>
 	  {{job.company.name}}</td>
@@ -24,6 +28,7 @@
 	  </td>
       <td><span class='font-small'>{{job.published_at.for_humans}}</span></td>
     </tr>
+
   </tbody>
 </table>
   
@@ -68,7 +73,11 @@ export default {
 			console.log(error);
 		  });
 
-	}
+	},
+	
+	clearData() {
+		this.jobs = {}
+		}
   
   }  
   
@@ -81,6 +90,14 @@ export default {
 	height:25px;
 	margin: 2px 5px;
 	display:block;
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 </style>
