@@ -18,7 +18,7 @@
 
     
 	
-	<tr v-for="job in jobs" :key="job">
+	<tr v-for="job in jobs">
       <td>
 	  <img class='logo' :src="job.company.avatar"></img>
 	  {{job.company.name}}</td>
